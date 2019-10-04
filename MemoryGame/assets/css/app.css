@@ -1,0 +1,70 @@
+/* This file is for your main application css. */
+
+@import "~milligram/dist/milligram";
+
+/* Refered https://www.w3schools.com/css/default.asp for in doubts CS*/
+
+.container {
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    user-select: none;
+}
+
+.header {
+    margin-left: -2.5px;
+    user-select: none;
+}
+
+.table {
+	margin-top: -15px;
+	user-select: none;
+}
+
+.row {
+    width: 200px;
+    text-align: center;
+	vertical-align: middle;
+	line-height: 39px;
+	user-select: none; 
+}
+
+.rowLast {
+    width: 200px;
+}
+
+.row *{
+    display: inline-block;
+    margin-left: 10px;
+    width: 200px;
+}
+
+.column {
+	border: 1px solid green;
+	float: left;
+    height: 40px;
+    margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+.selected {
+	background-color: green;
+	color: white;
+}
+
+.score {
+	margin-left: -15px;
+    user-select: none;
+}
+
+.reset {
+	margin-top: 10px;
+	margin-left: 10px;
+}
