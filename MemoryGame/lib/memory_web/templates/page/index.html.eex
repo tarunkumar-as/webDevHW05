@@ -1,7 +1,8 @@
 <h1 class="mainPageHeader"align="center">Join A Game</h1>
 
 <!-- Form styling referred from https://www.w3schools.com/html/html_forms.asp. -->
-<form class="form" align="center">
-  Enter Game Name: <input type="text" name="gamename" value="Demo">
-</form>
-<button type="button" class="Create">Join Game!</button>
+<%= form_for @conn, "/games", fn f -> %>
+      <p>Enter Game Name: <%= text_input f, :name %></p>
+      <p><%= submit "Play" %></p>
+<% end %>
+

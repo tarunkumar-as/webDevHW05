@@ -21,12 +21,6 @@ import init_game from './memory';
 
 $(function() {
   
-  var buttons = document.getElementsByClassName("Create");
-  var i;
-  for (i = 0 ; i < buttons.length ; i++) {
-      buttons[i].addEventListener("click", buttonPressed, false);
-  }
-  
   let root = document.getElementById('root');
   if (root) {
     let channel = socket.channel(window.game_name, {})
@@ -35,7 +29,3 @@ $(function() {
   
 });
 
-function buttonPressed() {
-    //Referred http://jsbin.com/UpASuHo/113/edit?html,js,output for doubts of form serializing
-	window.location.href = "/games/" + $('form').serializeArray()[0]["value"];
-}

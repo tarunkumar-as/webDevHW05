@@ -1,0 +1,16 @@
+[Unit]
+Description=Memory Game
+
+[Service]
+Type=simple
+User=hw05user
+Group=hw05user
+Restart=on-failure
+Environment=MIX_ENV=prod "PORT=4241"
+Environment=LANG=en_US.UTF-8
+
+WorkingDirectory=/home/hw05user/webDevHW05/MemoryGame/
+ExecStart=/bin/bash /home/hw05user/webDevHW05/MemoryGame/start.sh
+
+[Install]
+WantedBy=multi-user.target
