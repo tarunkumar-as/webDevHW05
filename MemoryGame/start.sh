@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export MIX_ENV=prod
-export PORT=4241
+export PORT=5295
 
 echo "Starting app..."
 

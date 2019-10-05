@@ -9,7 +9,7 @@ use Mix.Config
 
 # Configures the endpoint
 config :memory, MemoryWeb.Endpoint,
-  url: [host: "localhost"],
+  url: [host: "memory2.neu-apps.website"],
   secret_key_base: "Ql6h5Fr+tZ2v0R9qj8w4TCGThJ33jgkeh03xueQUAEZB1CwHUKG83KfNT+zeOnD9",
   render_errors: [view: MemoryWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Memory.PubSub, adapter: Phoenix.PubSub.PG2]

@@ -6,7 +6,7 @@ Type=simple
 User=hw05user
 Group=hw05user
 Restart=on-failure
-Environment=MIX_ENV=prod "PORT=4241"
+Environment=MIX_ENV=prod "PORT=5295"
 Environment=LANG=en_US.UTF-8
 
 WorkingDirectory=/home/hw05user/webDevHW05/MemoryGame/

@@ -6,11 +6,11 @@ server {
     server_name memory2.neu-apps.website;
 
     location / {
-        proxy_pass http://localhost:4241;
+        proxy_pass http://localhost:5295;
     }
 
     location /socket {
-        proxy_pass http://localhost:4241;
+        proxy_pass http://localhost:5295;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection "upgrade";	 	 
